@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1: Mujeres como yo — XtenSTEM</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Back nav -->
+<nav class="back-nav">
+  <a href="../index.html">← Volver al inicio</a>
+  <div class="back-nav-logo">Xten<span>STEM</span></div>
+</nav>
+
+<!-- Hero -->
+<section class="module-hero">
+  <div class="module-hero-inner">
+    <span class="module-tag">Módulo 01</span>
+    <h1>Mujeres como yo</h1>
+    <p>Historias reales de mujeres indígenas en STEM. Mentoras que hablan tu idioma, vienen de tu tierra, y abrieron el camino para que tú también puedas.</p>
+  </div>
+</section>
+
+<!-- Mentoras -->
+<section class="module-section">
+  <div class="module-section-inner">
+    <span class="section-tag">Conoce a las mentoras</span>
+    <h2 class="section-title" style="font-size:1.8rem;">Ellas llegaron primero.<br>Para que tú no vayas sola.</h2>
+    <div class="mentoras-grid">
+      <!-- Mentora cards se agregan aquí cuando estén disponibles -->
+      <!-- Template:
+      <div class="mentora-card">
+        <div class="mentora-img"><img src="../assets/mentoras/nombre.jpg" alt="Nombre"></div>
+        <div class="mentora-info">
+          <div class="mentora-name">Nombre Apellido</div>
+          <div class="mentora-role">Ingeniería aeroespacial · Alemania</div>
+          <div class="mentora-bio">Originaria de X, hoy trabaja en Y. Le apasiona Z.</div>
+        </div>
+      </div>
+      -->
+      <div class="mentora-empty">
+        <div class="mentora-empty-icon">👩🏽‍🔬</div>
+        <p>Próximamente — estamos invitando a nuestras primeras mentoras</p>
+      </div>
+      <div class="mentora-empty">
+        <div class="mentora-empty-icon">🌱</div>
+        <p>Próximamente</p>
+      </div>
+      <div class="mentora-empty">
+        <div class="mentora-empty-icon">🚀</div>
+        <p>Próximamente</p>
+      </div>
+    </div>
+
+    <div style="margin-top:2.5rem; padding:1.6rem; background:var(--jade-bg); border-radius:var(--radius);">
+      <h4 style="font-family:var(--font-display); font-weight:700; margin-bottom:.5rem;">¿Eres mujer en STEM?</h4>
+      <p style="font-size:.9rem; color:var(--stone); margin-bottom:1rem;">Tu historia puede cambiar la vida de una niña en una comunidad rural. Escríbenos — compartir no toma más de 20 minutos.</p>
+      <a href="mailto:contacto@xtenstem.org" class="btn-primary" style="display:inline-block;">Quiero ser mentora</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="module-section" style="background:var(--fog);">
+  <div class="module-section-inner">
+    <span class="section-tag">Preguntas frecuentes</span>
+    <h2 class="section-title" style="font-size:1.8rem;">Lo que quizás te preguntas</h2>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Para qué sirve este módulo?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Ver a alguien como tú — misma cultura, mismo idioma, mismo origen — ejerciendo una carrera STEM cambia lo que crees que es posible para ti. El 76.8% de las niñas encuestadas nunca ha visto a una mujer indígena en ciencias. Este módulo cambia eso.</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Tengo que hablar kaqchikel para entender el contenido?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">No. Todo el contenido está disponible en español. Las historias de mentoras que hablan lenguas mayas incluirán traducción. El objetivo es que el idioma sea un puente, no un requisito.</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Puedo contactar directamente a las mentoras?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Las mentoras deciden qué tipo de contacto están dispuestas a tener. Algunas compartirán su correo o redes; otras solo su historia en video. Respetamos siempre su privacidad.</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Qué pasa si yo también quiero estudiar esa carrera?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">El Módulo 5 tiene información sobre becas, programas y pasos concretos para aplicar a universidades. Pero empieza aquí: conoce a alguien que ya lo hizo. Eso es lo primero.</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Cómo puedo participar si soy una chica de mi comunidad?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">XtenSTEM está diseñada para ti. No necesitas internet de alta velocidad ni computadora propia. Habla con tu maestra o director para que XtenSTEM llegue a tu escuela.</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q" onclick="togFaq(this)">
+          <span>¿Cuándo estarán disponibles las primeras historias?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Estamos en proceso de grabar las primeras historias. Si quieres saber cuándo están listas, síguenos en Instagram @XtenSTEM.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Actividad -->
+<section class="module-section">
+  <div class="module-section-inner">
+    <span class="section-tag">Actividad</span>
+    <h2 class="section-title" style="font-size:1.8rem;">Mi científica favorita</h2>
+    <div class="activity-card">
+      <h4>✏️ Para hacer hoy</h4>
+      <ol>
+        <li>Elige a una mujer en STEM que te llame la atención (puede ser de Guatemala, de tu país, o del mundo).</li>
+        <li>Investiga: ¿De dónde viene? ¿Qué estudió? ¿Qué problema resuelve con su trabajo?</li>
+        <li>Escribe 3 cosas de su historia que te sorprendan o te inspiren.</li>
+        <li>Comparte con alguien: una amiga, tu mamá, tu maestra. Cuéntales quién es y por qué la elegiste.</li>
+      </ol>
+    </div>
+    <a href="modulo2.html" class="next-module">Siguiente módulo: Ciencia en mi comunidad →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Xten<span>STEM</span></div>
+    <div>Módulo 01 · Mujeres como yo</div>
+    <div>Guatemala · 2026</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
