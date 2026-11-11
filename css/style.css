@@ -634,7 +634,28 @@ footer {
   letter-spacing: .02em;
   font-weight: 600;
 }
+/* ── Kaqchikel text styling (Grande y Claro) ──────────────── */
+.kaqc-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem; /* Subido de tamaño para mayor protagonismo */
+  color: #f7df83; /* Tono dorado más brillante y claro */
+  letter-spacing: .03em;
+  margin-bottom: .6rem;
+  border-left: 3.5px solid #6b3d0c; /* Borde marrón profundo y bien marcado */
+  padding-left: .8rem;
+  font-weight: 600; /* Asegura cuerpo y legibilidad */
+  text-shadow: 0 0 10px rgba(247, 223, 131, 0.3); /* Brillo sutil estilo neón */
+}
 
+.kaqc-inline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem; /* Ampliado para que destaque junto al texto principal */
+  color: #f7df83;
+  letter-spacing: .03em;
+  font-weight: 600;
+}
 /* ── Module 4 styles ─────────────────────────────────────── */
 .m4-hero { background: linear-gradient(135deg, var(--jade3) 0%, var(--jade) 60%, var(--jade2) 100%); }
 .m4-hero-actions { display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem; }
