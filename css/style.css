@@ -613,25 +613,26 @@ footer {
   .hero             { padding: 100px 5% 60px; }
 }
 
-/* ── Kaqchikel text styling ──────────────────────────────── */
+/* ── Kaqchikel text styling (Optimized for Light Backgrounds) ── */
 .kaq-line {
   font-family: var(--font-display);
   font-style: italic;
   font-size: .82rem;
-  color: #f3d26b; /* Rich, vibrant neon-gold text */
+  color: #8c5812; /* Deep, rich brownish-gold text for strong contrast on white */
   letter-spacing: .02em;
   margin-bottom: .4rem;
-  border-left: 2.5px solid #d4982b; /* Deep, warm bronze/brownish gold border */
+  border-left: 3px solid #573307; /* Very deep, bold dark bronze border */
   padding-left: .6rem;
-  text-shadow: 0 0 8px rgba(243, 210, 107, 0.25); /* Subtle soft glow for that neon feel */
+  font-weight: 600; /* Extra weight to prevent thin italic fonts from fading */
 }
 
 .kaq-inline {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .78rem; /* Fixed typo: changed from .78em to .78rem for consistency */
-  color: #f3d26b;
+  font-size: .78rem;
+  color: #8c5812;
   letter-spacing: .02em;
+  font-weight: 600;
 }
 
 /* ── Module 4 styles ─────────────────────────────────────── */
