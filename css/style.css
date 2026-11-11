@@ -618,17 +618,19 @@ footer {
   font-family: var(--font-display);
   font-style: italic;
   font-size: .82rem;
-  color: var(--maize);
+  color: #f3d26b; /* Rich, vibrant neon-gold text */
   letter-spacing: .02em;
   margin-bottom: .4rem;
-  border-left: 2px solid var(--maize);
+  border-left: 2.5px solid #d4982b; /* Deep, warm bronze/brownish gold border */
   padding-left: .6rem;
+  text-shadow: 0 0 8px rgba(243, 210, 107, 0.25); /* Subtle soft glow for that neon feel */
 }
+
 .kaq-inline {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .78em;
-  color: var(--maize);
+  font-size: .78rem; /* Fixed typo: changed from .78em to .78rem for consistency */
+  color: #f3d26b;
   letter-spacing: .02em;
 }
 
