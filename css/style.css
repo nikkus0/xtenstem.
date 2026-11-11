@@ -613,27 +613,39 @@ footer {
   .hero             { padding: 100px 5% 60px; }
 }
 
-/* ── Kaqchikel text styling (Optimized for Light Backgrounds) ── */
-.kaq-line {
+/* ── Kaqchikel text styling (Gigante con Degradado Verde a Oro) ── */
+.kaqc-line {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .82rem;
-  color: #8c5812; /* Deep, rich brownish-gold text for strong contrast on white */
-  letter-spacing: .02em;
-  margin-bottom: .4rem;
-  border-left: 3px solid #573307; /* Very deep, bold dark bronze border */
-  padding-left: .6rem;
-  font-weight: 600; /* Extra weight to prevent thin italic fonts from fading */
+  font-size: 1.5rem; /* Tamaño mucho más grande e imponente */
+  letter-spacing: .03em;
+  margin-bottom: .8rem;
+  border-left: 5px solid #4a2804; /* Borde marrón profundo y grueso */
+  padding-left: 1rem;
+  font-weight: 700;
+  
+  /* Degradado de verde brillante a dorado/marrón neón */
+  background: linear-gradient(135deg, #5cd68a 0%, #f7df83 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Sombra sutil para darle volumen sin perder el efecto neón */
+  filter: drop-shadow(0 0 8px rgba(247, 223, 131, 0.25));
 }
 
-.kaq-inline {
+.kaqc-inline {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .78rem;
-  color: #8c5812;
-  letter-spacing: .02em;
-  font-weight: 600;
+  font-size: 1.35rem; /* También grande para mantener proporción */
+  letter-spacing: .03em;
+  font-weight: 700;
+  
+  /* Mismo degradado para mantener consistencia */
+  background: linear-gradient(135deg, #5cd68a 0%, #f7df83 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 /* ── Kaqchikel text styling (Grande y Claro) ──────────────── */
 .kaqc-line {
   font-family: var(--font-display);
