@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía vocacional y universitaria para que niñas y adolescentes rurales indígenas de Guatemala construyan su camino STEM.">
+  <title>Módulo 4: Mi camino para llegar ahí — XtenSTEM</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modulo4.css">
+</head>
+<body>
+
+<nav class="back-nav">
+  <a href="../index.html">← Volver al inicio</a>
+  <div class="back-nav-logo">Xten<span>STEM</span></div>
+</nav>
+
+<header class="module-hero m4-hero">
+  <div class="module-hero-inner">
+    <span class="module-tag">Módulo 04 · Tu futuro, tus decisiones</span>
+    <h1>Mi camino para llegar ahí</h1>
+    <p>Descubre qué te interesa, conoce tus opciones universitarias y construye un camino posible. Tu origen no limita lo que puedes aprender ni lo que puedes aportar.</p>
+    <div class="m4-hero-actions">
+      <a class="btn-primary" href="#orientacion">Comenzar mi ruta</a>
+      <a class="btn-outline" href="#universidades">Explorar universidades</a>
+    </div>
+  </div>
+</header>
+
+<nav class="m4-toc" aria-label="Contenido del módulo">
+  <a href="#orientacion">Vocación</a>
+  <a href="#carreras">Carreras</a>
+  <a href="#universidades">Universidades</a>
+  <a href="#costos">Costos</a>
+  <a href="#becas">Becas</a>
+  <a href="#extranjero">Extranjero</a>
+  <a href="#regreso">Regresar y transformar</a>
+  <a href="#mi-plan">Mi plan</a>
+</nav>
+
+<main>
+  <!-- 01: Opening / agency -->
+  <section class="module-section">
+    <div class="module-section-inner">
+      <span class="section-tag">Antes de empezar</span>
+      <h2 class="section-title">No tienes que saberlo todo hoy</h2>
+      <p class="m4-lead">Elegir una carrera no significa decidir toda tu vida de una sola vez. Significa comenzar a explorar preguntas, reconocer tus habilidades y buscar información para tomar decisiones con más libertad.</p>
+      <div class="m4-principles">
+        <article class="m4-principle"><span>01</span><h3>Tu curiosidad importa</h3><p>Lo que observas en tu comunidad —el agua, las cosechas, la salud, los caminos, los idiomas o la tecnología— puede convertirse en una pregunta científica.</p></article>
+        <article class="m4-principle"><span>02</span><h3>Tu identidad es una fortaleza</h3><p>Hablar kaqchikel, conocer el territorio y comprender las prácticas de tu comunidad son conocimientos valiosos. La universidad debe ampliar tus herramientas, no hacerte olvidar quién eres.</p></article>
+        <article class="m4-principle"><span>03</span><h3>Hay más de un camino</h3><p>Puedes estudiar cerca, trasladarte a otra ciudad, combinar estudio y trabajo cuando sea viable, buscar una beca o continuar con posgrados más adelante.</p></article>
+      </div>
+      <div class="m4-note"><strong>Una idea importante:</strong> no existe una carrera “para mujeres” y otra “para hombres”. La decisión debe considerar tus intereses, oportunidades, condiciones y metas, no los estereotipos de otras personas.</div>
+    </div>
+  </section>
+
+  <!-- 02: Vocational explorer -->
+  <section class="module-section m4-soft" id="orientacion">
+    <div class="module-section-inner">
+      <span class="section-tag">01 · Orientación vocacional</span>
+      <h2 class="section-title">¿Qué tipo de problemas te gustaría ayudar a resolver?</h2>
+      <p class="section-sub">Esta actividad no es un examen ni un diagnóstico psicológico. Es una primera exploración para descubrir áreas que podrías investigar. Puedes elegir varias respuestas.</p>
+
+      <div class="m4-quiz" id="careerQuiz">
+        <div class="m4-quiz-progress"><span id="quizProgressText">Pregunta 1 de 5</span><div class="m4-progress-track"><div id="quizProgressBar"></div></div></div>
+        <div class="m4-question" data-question="0">
+          <h3>1. ¿Qué situación te gustaría comprender o mejorar?</h3>
+          <label><input type="checkbox" name="q0" value="environment"> El agua, los bosques, el clima y los cultivos.</label>
+          <label><input type="checkbox" name="q0" value="health"> La salud, la alimentación y el bienestar de las personas.</label>
+          <label><input type="checkbox" name="q0" value="technology"> Las computadoras, las aplicaciones y cómo funciona la tecnología.</label>
+          <label><input type="checkbox" name="q0" value="engineering"> Los caminos, las viviendas, la energía y las máquinas.</label>
+          <label><input type="checkbox" name="q0" value="data"> Los números, los patrones y explicar por qué suceden las cosas.</label>
+        </div>
+        <div class="m4-question" data-question="1" hidden>
+          <h3>2. ¿Qué actividad te da más curiosidad?</h3>
+          <label><input type="checkbox" name="q1" value="environment"> Observar plantas, animales, suelos o cambios en el clima.</label>
+          <label><input type="checkbox" name="q1" value="health"> Aprender cómo funciona el cuerpo y cómo prevenir enfermedades.</label>
+          <label><input type="checkbox" name="q1" value="technology"> Crear una página, programar o resolver problemas digitales.</label>
+          <label><input type="checkbox" name="q1" value="engineering"> Dibujar, construir, diseñar o encontrar soluciones prácticas.</label>
+          <label><input type="checkbox" name="q1" value="data"> Investigar, comparar información y encontrar explicaciones.</label>
+        </div>
+        <div class="m4-question" data-question="2" hidden>
+          <h3>3. Si tu escuela o comunidad te pidiera un proyecto, ¿cuál escogerías?</h3>
+          <label><input type="checkbox" name="q2" value="environment"> Investigar cómo cuidar el agua o mejorar los cultivos.</label>
+          <label><input type="checkbox" name="q2" value="health"> Diseñar una campaña de salud y nutrición con información confiable.</label>
+          <label><input type="checkbox" name="q2" value="technology"> Crear una herramienta digital bilingüe para aprender o comunicarse.</label>
+          <label><input type="checkbox" name="q2" value="engineering"> Proponer una solución de energía, construcción o transporte.</label>
+          <label><input type="checkbox" name="q2" value="data"> Analizar datos para entender una necesidad de la comunidad.</label>
+        </div>
+        <div class="m4-question" data-question="3" hidden>
+          <h3>4. ¿Cómo te gusta trabajar?</h3>
+          <label><input type="checkbox" name="q3" value="environment"> Al aire libre, observando y haciendo trabajo de campo.</label>
+          <label><input type="checkbox" name="q3" value="health"> Con personas, escuchando y colaborando en equipo.</label>
+          <label><input type="checkbox" name="q3" value="technology"> Frente a una computadora, creando y probando ideas.</label>
+          <label><input type="checkbox" name="q3" value="engineering"> Diseñando, armando, midiendo y mejorando objetos o sistemas.</label>
+          <label><input type="checkbox" name="q3" value="data"> Investigando con calma, números, mapas o evidencia.</label>
+        </div>
+        <div class="m4-question" data-question="4" hidden>
+          <h3>5. ¿Qué te gustaría aprender a hacer?</h3>
+          <label><input type="checkbox" name="q4" value="environment"> Medir la calidad del agua, estudiar suelos o proteger ecosistemas.</label>
+          <label><input type="checkbox" name="q4" value="health"> Comprender enfermedades, nutrición o tecnologías médicas.</label>
+          <label><input type="checkbox" name="q4" value="technology"> Programar, diseñar sistemas o trabajar con inteligencia artificial.</label>
+          <label><input type="checkbox" name="q4" value="engineering"> Diseñar infraestructura, máquinas o sistemas de energía.</label>
+          <label><input type="checkbox" name="q4" value="data"> Usar matemáticas, estadística y datos para tomar decisiones.</label>
+        </div>
+        <div class="m4-quiz-controls">
+          <button type="button" class="m4-btn m4-btn-light" id="quizBack" disabled>← Anterior</button>
+          <button type="button" class="m4-btn" id="quizNext">Siguiente →</button>
+          <button type="button" class="m4-btn" id="quizReset" hidden>Volver a explorar</button>
+        </div>
+        <div id="quizResult" class="m4-quiz-result" aria-live="polite" hidden></div>
+      </div>
+      <p class="m4-small">Tus respuestas se procesan en esta página y no se envían a ningún servidor. No se guardan al cerrar o recargar el navegador.</p>
+    </div>
+  </section>
+
+  <!-- 03: Career families -->
+  <section class="module-section" id="carreras">
+    <div class="module-section-inner">
+      <span class="section-tag">02 · Conoce las opciones</span>
+      <h2 class="section-title">Carreras STEM y lo que puedes hacer con ellas</h2>
+      <p class="section-sub">Una misma necesidad puede requerir varias profesiones. Los ejemplos muestran conexiones posibles, no límites: puedes combinar disciplinas.</p>
+      <div class="m4-career-grid">
+        <article class="m4-career-card"><div class="m4-career-icon">🌱</div><h3>Ambiente, agricultura y territorio</h3><p><b>Carreras:</b> Agronomía, Ingeniería Ambiental, Biología, Ciencias Forestales, Geología, Gestión de Recursos Naturales.</p><p><b>¿Qué hacen?</b> Investigan suelos, agua, biodiversidad, plagas, bosques y adaptación al cambio climático.</p><p><b>En Guatemala:</b> apoyar sistemas de riego, recuperación de suelos, agricultura resiliente, monitoreo de bosques y protección de fuentes de agua.</p></article>
+        <article class="m4-career-card"><div class="m4-career-icon">💧</div><h3>Agua e infraestructura</h3><p><b>Carreras:</b> Ingeniería Civil, Ingeniería Sanitaria, Ingeniería en Sistemas Hídricos, Arquitectura.</p><p><b>¿Qué hacen?</b> Diseñan y mantienen sistemas de agua, drenajes, puentes, caminos, viviendas y obras seguras.</p><p><b>En Guatemala:</b> colaborar en sistemas comunitarios de agua, infraestructura escolar, caminos rurales y gestión de riesgos.</p></article>
+        <article class="m4-career-card"><div class="m4-career-icon">🧬</div><h3>Salud y ciencias de la vida</h3><p><b>Carreras:</b> Medicina, Enfermería, Nutrición, Química Biológica, Química Farmacéutica, Microbiología, Biología.</p><p><b>¿Qué hacen?</b> Investigan, previenen, diagnostican y atienden necesidades de salud desde distintos roles profesionales.</p><p><b>En Guatemala:</b> fortalecer laboratorios, salud materna, nutrición, prevención, investigación y atención culturalmente pertinente.</p></article>
+        <article class="m4-career-card"><div class="m4-career-icon">💻</div><h3>Computación y tecnología</h3><p><b>Carreras:</b> Ingeniería en Sistemas, Ciencias de la Computación, Ciencia de Datos, Ciberseguridad, Desarrollo de Software.</p><p><b>¿Qué hacen?</b> Crean programas, plataformas, redes, sistemas seguros y herramientas para analizar información.</p><p><b>En Guatemala:</b> crear recursos educativos en idiomas mayas, sistemas para cooperativas, herramientas agrícolas y servicios digitales accesibles.</p></article>
+        <article class="m4-career-card"><div class="m4-career-icon">⚡</div><h3>Energía y diseño</h3><p><b>Carreras:</b> Ingeniería Eléctrica, Electrónica, Mecánica, Mecatrónica, Energías Renovables, Física.</p><p><b>¿Qué hacen?</b> Diseñan y evalúan equipos, circuitos, máquinas y sistemas de generación y distribución de energía.</p><p><b>En Guatemala:</b> impulsar energía solar apropiada, mantenimiento de equipos, refrigeración de alimentos y soluciones energéticas comunitarias.</p></article>
+        <article class="m4-career-card"><div class="m4-career-icon">📊</div><h3>Matemática, datos e investigación</h3><p><b>Carreras:</b> Matemática, Estadística, Física, Economía cuantitativa, Ciencia de Datos.</p><p><b>¿Qué hacen?</b> Construyen modelos, analizan evidencia, hacen mediciones y ayudan a tomar decisiones informadas.</p><p><b>En Guatemala:</b> estudiar patrones de lluvia, evaluar programas de salud, analizar cosechas y medir resultados de proyectos.</p></article>
+      </div>
+      <div class="m4-note"><strong>Recuerda:</strong> STEM también necesita comunicación, idiomas, ética, historia, conocimientos comunitarios y trabajo colectivo. La ciencia mejora cuando escucha a las personas que viven los problemas.</div>
+    </div>
+  </section>
+
+  <!-- 04: University directory -->
+  <section class="module-section m4-soft" id="universidades">
+    <div class="module-section-inner">
+      <span class="section-tag">03 · Universidades en Guatemala</span>
+      <h2 class="section-title">Compara opciones, no solamente nombres</h2>
+      <p class="section-sub">Estas instituciones tienen oferta académica relacionada con STEM. No existe una única “mejor” universidad para todas: compara la carrera exacta, el campus, la calidad de acompañamiento, los costos totales, la modalidad y las oportunidades de práctica e investigación.</p>
+
+      <div class="m4-university-list">
+        <article class="m4-university">
+          <div class="m4-uni-top"><span class="m4-uni-type">Pública · cobertura nacional</span><h3>Universidad de San Carlos de Guatemala (USAC)</h3></div>
+          <p>Una opción pública importante para explorar, con facultades y centros universitarios en distintas regiones. Entre sus áreas están Ingeniería, Agronomía, Ciencias Químicas y Farmacia, Ciencias Médicas, Veterinaria y otras disciplinas.</p>
+          <div class="m4-uni-detail"><b>Ruta de ingreso:</b> orientación vocacional, pruebas de conocimientos básicos y pruebas específicas según facultad o carrera; después se realiza la inscripción. Los requisitos cambian por unidad académica y convocatoria.</div>
+          <div class="m4-uni-detail"><b>Qué revisar:</b> si la carrera existe en un centro regional, horarios, transporte, materiales, prácticas, calendario de pruebas y requisitos de la facultad.</div>
+          <div class="m4-uni-links"><a href="https://www.usac.edu.gt/" target="_blank" rel="noopener">Sitio USAC ↗</a><a href="https://sun.usac.edu.gt/index.php/proceso-de-ingreso/" target="_blank" rel="noopener">Proceso de ingreso ↗</a><a href="https://portal.usac.edu.gt/pruebas-especificas/" target="_blank" rel="noopener">Pruebas específicas ↗</a><a href="https://portalregistro.usac.edu.gt/" target="_blank" rel="noopener">Registro y Estadística ↗</a></div>
+        </article>
+
+        <article class="m4-university">
+          <div class="m4-uni-top"><span class="m4-uni-type">Privada · ciencias y tecnología</span><h3>Universidad del Valle de Guatemala (UVG)</h3></div>
+          <p>Ofrece programas en Ingeniería, Ciencias, Educación, Creatividad y Negocios. Cuenta con espacios de innovación e investigación; su historia tecnológica incluye el desarrollo del primer satélite guatemalteco, Quetzal-1.</p>
+          <div class="m4-uni-detail"><b>Ayuda financiera:</b> UVG informa que ofrece becas y créditos educativos. Su proceso indica que primero se completa admisión y, después de ser admitida, se inicia la solicitud de ayuda financiera. Consulta fechas y condiciones directamente.</div>
+          <div class="m4-uni-detail"><b>Qué revisar:</b> tarifario vigente de la carrera, porcentaje y renovación de la ayuda, gastos de vida, transporte y requisitos académicos.</div>
+          <div class="m4-uni-links"><a href="https://www.uvg.edu.gt/" target="_blank" rel="noopener">Sitio UVG ↗</a><a href="https://www.uvg.edu.gt/admisiones/inicio/" target="_blank" rel="noopener">Admisiones y carreras ↗</a><a href="https://www.uvg.edu.gt/admisiones/becas/" target="_blank" rel="noopener">Becas y ayuda financiera ↗</a></div>
+        </article>
+
+        <article class="m4-university">
+          <div class="m4-uni-top"><span class="m4-uni-type">Privada · ingeniería y ciencias aplicadas</span><h3>Universidad Rafael Landívar (URL)</h3></div>
+          <p>Su oferta incluye Ingeniería, Ciencias Ambientales y Agrícolas, Ciencias de la Salud y otras áreas. Publica carreras y campus en distintos departamentos, lo que permite investigar opciones fuera de la capital.</p>
+          <div class="m4-uni-detail"><b>Ayuda financiera:</b> su Centro de Gestión de Becas publica programas para primer ingreso y reingreso, así como oportunidades de instituciones aliadas. Algunas convocatorias son específicas por campus y carrera.</div>
+          <div class="m4-uni-detail"><b>Qué revisar:</b> campus donde se imparte la carrera, convocatoria vigente, porcentaje de cobertura, requisitos socioeconómicos y académicos, y si hay costos no cubiertos.</div>
+          <div class="m4-uni-links"><a href="https://principal.url.edu.gt/" target="_blank" rel="noopener">Sitio URL ↗</a><a href="https://principal.url.edu.gt/carreras/" target="_blank" rel="noopener">Oferta académica ↗</a><a href="https://principal.url.edu.gt/becas/" target="_blank" rel="noopener">Becas 2026–2027 ↗</a></div>
+        </article>
+
+        <article class="m4-university">
+          <div class="m4-uni-top"><span class="m4-uni-type">Privada · tecnología e innovación</span><h3>Universidad Galileo</h3></div>
+          <p>Conviene explorarla especialmente si te interesan computación, informática, sistemas, tecnología, ingeniería y áreas científicas. Su portal reúne programas académicos y el proceso de admisión.</p>
+          <div class="m4-uni-detail"><b>Ruta de consulta:</b> identifica la facultad responsable de la carrera, solicita el plan de estudios y pide información escrita sobre inscripción, mensualidades, laboratorios, horarios y opciones de apoyo.</div>
+          <div class="m4-uni-detail"><b>Qué revisar:</b> que el programa responda a tus intereses y que puedas cubrir el costo completo durante toda la carrera, no solamente el primer semestre.</div>
+          <div class="m4-uni-links"><a href="https://www.galileo.edu/" target="_blank" rel="noopener">Sitio Universidad Galileo ↗</a><a href="https://www.galileo.edu/" target="_blank" rel="noopener">Programas y admisiones ↗</a></div>
+        </article>
+
+        <article class="m4-university">
+          <div class="m4-uni-top"><span class="m4-uni-type">Privada · computación e ingeniería</span><h3>Universidad Francisco Marroquín (UFM)</h3></div>
+          <p>Su oferta incluye Ingeniería Empresarial e Ingeniería en Computer Science, además de otras carreras. Es una alternativa que puedes comparar si te interesan programación, computación, diseño de soluciones y emprendimiento tecnológico.</p>
+          <div class="m4-uni-detail"><b>Programa de apoyo:</b> el programa ITA (Impulso al Talento Académico) describe apoyo para estudiantes con alto potencial académico y recursos económicos limitados. La elegibilidad, carreras incluidas y condiciones deben confirmarse directamente.</div>
+          <div class="m4-uni-detail"><b>Qué revisar:</b> requisitos del programa ITA, cobertura total, cupos, continuidad del apoyo y condiciones para mantenerlo.</div>
+          <div class="m4-uni-links"><a href="https://www.ufm.edu/" target="_blank" rel="noopener">Sitio UFM ↗</a><a href="https://admisiones.ufm.edu/site/" target="_blank" rel="noopener">Carreras y admisiones ↗</a><a href="https://ita.ufm.edu/es/done-ahora/" target="_blank" rel="noopener">Programa ITA ↗</a></div>
+        </article>
+      </div>
+
+      <div class="m4-note"><strong>Importante:</strong> esta lista es una selección inicial, no un ranking ni una acreditación comparativa. Antes de decidir, verifica que la carrera esté vigente, el campus la imparta y el título y plan de estudios correspondan a tus metas.</div>
+    </div>
+  </section>
+
+  <!-- 05: Cost planner -->
+  <section class="module-section" id="costos">
+    <div class="module-section-inner">
+      <span class="section-tag">04 · Presupuesto realista</span>
+      <h2 class="section-title">¿Cuánto cuesta estudiar de verdad?</h2>
+      <p class="section-sub">La matrícula es solo una parte. Para comparar opciones, calcula cuánto costaría estudiar durante un mes y durante un año.</p>
+      <div class="m4-cost-layout">
+        <div class="m4-cost-copy">
+          <h3>Incluye estos gastos</h3>
+          <ul class="m4-check-list">
+            <li>Inscripción, matrícula y cuotas mensuales.</li>
+            <li>Transporte desde tu comunidad o alojamiento cerca del campus.</li>
+            <li>Alimentación, agua y necesidades diarias.</li>
+            <li>Libros, fotocopias, materiales, bata o equipo de protección si la carrera lo requiere.</li>
+            <li>Computadora, internet y datos móviles cuando sean necesarios.</li>
+            <li>Prácticas, visitas de campo, laboratorios y trámites.</li>
+            <li>Un pequeño fondo para imprevistos, si es posible.</li>
+          </ul>
+          <p class="m4-small">Los montos cambian según universidad, carrera, campus y año. XtenSTEM no publica precios estimados como si fueran tarifas oficiales: solicita el tarifario vigente a cada institución.</p>
+        </div>
+        <div class="m4-calculator">
+          <h3>Calcula tu presupuesto mensual</h3>
+          <label>Cuotas y matrícula mensual (Q)<input type="number" min="0" step="50" id="costTuition" placeholder="Ej. 1200"></label>
+          <label>Transporte o alojamiento (Q)<input type="number" min="0" step="50" id="costTravel" placeholder="Ej. 500"></label>
+          <label>Alimentación (Q)<input type="number" min="0" step="50" id="costFood" placeholder="Ej. 700"></label>
+          <label>Materiales, internet y otros (Q)<input type="number" min="0" step="50" id="costOther" placeholder="Ej. 250"></label>
+          <div class="m4-cost-total"><span>Total estimado por mes</span><strong id="costMonthly">Q0</strong></div>
+          <div class="m4-cost-total m4-cost-year"><span>Estimado para 10 meses de estudio</span><strong id="costYear">Q0</strong></div>
+          <p class="m4-small">Estimación orientativa editable. No incluye gastos extraordinarios ni sustituye una cotización oficial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06: Scholarships -->
+  <section class="module-section m4-soft" id="becas">
+    <div class="module-section-inner">
+      <span class="section-tag">05 · Becas y financiamiento</span>
+      <h2 class="section-title">Una beca se busca con tiempo y con información</h2>
+      <p class="section-sub">No todas las becas cubren lo mismo. Algunas pagan matrícula; otras pueden incluir alojamiento, alimentación, transporte o materiales. Lee siempre las condiciones completas.</p>
+      <div class="m4-scholar-grid">
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Universidad pública</span><h3>USAC</h3><p>Consulta los apoyos estudiantiles, bienestar estudiantil y oportunidades vigentes en la facultad o centro universitario. Pregunta también por residencias, alimentación, transporte y apoyos que no sean únicamente becas de matrícula.</p><a href="https://www.usac.edu.gt/" target="_blank" rel="noopener">Consultar USAC ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Pregrado en Guatemala</span><h3>UVG · Ayuda financiera</h3><p>La universidad informa sobre becas y créditos educativos. La solicitud de apoyo se realiza después de completar el proceso de admisión. Revisa los requisitos, fechas, renovación y monto que debes cubrir.</p><a href="https://www.uvg.edu.gt/admisiones/becas/" target="_blank" rel="noopener">Consultar ayudas UVG ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Pregrado y campus regionales</span><h3>URL · Centro de Gestión de Becas</h3><p>Publica programas propios y de instituciones aliadas. Hay oportunidades diferenciadas por campus, rendimiento, necesidad económica y perfil. Las convocatorias y cupos cambian.</p><a href="https://principal.url.edu.gt/becas/" target="_blank" rel="noopener">Consultar becas URL ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Pregrado · revisar elegibilidad</span><h3>UFM · Programa ITA</h3><p>El programa Impulso al Talento Académico describe apoyo para jóvenes con talento académico y recursos económicos limitados. Contacta al programa para confirmar carreras participantes, requisitos y proceso vigente.</p><a href="https://ita.ufm.edu/es/done-ahora/" target="_blank" rel="noopener">Consultar programa ITA ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Programas públicos</span><h3>SEGEPLAN · Becas por Nuestro Futuro</h3><p>El Fondo Nacional de Becas de SEGEPLAN contempla pregrado (licenciatura y técnico universitario), posgrado y formación técnica no universitaria, dentro o fuera del país. Entre los criterios publicados figuran nacionalidad guatemalteca y residencia en el país, historial académico, compromiso social o comunitario, situación socioeconómica y referencias. La cobertura puede ser completa o parcial según la evaluación. Revisa las bases y convocatoria vigentes antes de aplicar.</p><a href="https://becasnuestrofuturo.gob.gt/" target="_blank" rel="noopener">Consultar portal oficial ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Posgrado en el extranjero</span><h3>Guatefuturo</h3><p>Su Programa Crédito-beca está dirigido a estudios de posgrado en el exterior, no es una beca general de licenciatura. Combina financiamiento con un componente de beca condicionado, entre otros aspectos, al regreso y permanencia en Guatemala según sus reglas.</p><a href="https://guatefuturo.org/informacion-general/" target="_blank" rel="noopener">Leer condiciones de Guatefuturo ↗</a></article>
+      </div>
+
+      <div class="m4-howto">
+        <h3>Cómo preparar una solicitud de beca</h3>
+        <ol>
+          <li><b>Investiga:</b> confirma que la beca acepta tu nivel educativo, carrera, edad, nacionalidad y situación económica.</li>
+          <li><b>Lee la cobertura:</b> identifica qué paga, qué no paga, si es beca o préstamo y si debes devolver dinero.</li>
+          <li><b>Prepara documentos:</b> notas, certificaciones, identificación, constancias económicas y cartas solicitadas.</li>
+          <li><b>Cuenta tu propósito:</b> explica qué quieres aprender, qué problema te interesa y cómo aplicarías ese conocimiento.</li>
+          <li><b>Pide acompañamiento:</b> docente, orientadora, familiar de confianza o equipo de becas puede ayudarte a revisar la solicitud.</li>
+          <li><b>Guarda evidencia:</b> copia de formularios, correos, fechas, nombres de contacto y comprobantes de envío.</li>
+        </ol>
+      </div>
+      <div class="m4-warning"><strong>Seguridad:</strong> desconfía de quien garantice una beca a cambio de dinero, prometa una aceptación segura o pida contraseñas. Usa páginas oficiales y comparte documentos personales solo por canales institucionales verificados, con apoyo de una persona adulta de confianza.</div>
+    </div>
+  </section>
+
+  <!-- 07: Abroad -->
+  <section class="module-section" id="extranjero">
+    <div class="module-section-inner">
+      <span class="section-tag">06 · Estudiar en otro país</span>
+      <h2 class="section-title">El mundo también puede ser un aula</h2>
+      <p class="m4-lead">Estudiar en el extranjero puede ampliar tus conocimientos, redes, idiomas y experiencia. No es la única ruta al éxito, ni significa que debas quedarte fuera de Guatemala. Puedes prepararte para aprender, crear vínculos y decidir cómo compartir después esas capacidades.</p>
+
+      <div class="m4-abroad-path">
+        <div><span>1</span><h3>Explora el área</h3><p>Define qué quieres estudiar y busca programas universitarios que realmente se relacionen con esa meta.</p></div>
+        <div><span>2</span><h3>Comprueba requisitos</h3><p>Idioma, notas, equivalencia del título, exámenes, edad, documentos y fechas. Cada universidad y beca tiene reglas distintas.</p></div>
+        <div><span>3</span><h3>Calcula el costo total</h3><p>Matrícula, vivienda, alimentación, seguro, visa, vuelos, transporte y gastos que la beca no cubre.</p></div>
+        <div><span>4</span><h3>Prepara la solicitud</h3><p>Ensayos propios, recomendaciones, historial académico y evidencia de proyectos o actividades.</p></div>
+        <div><span>5</span><h3>Planea cómo compartirás lo aprendido</h3><p>Investiga prácticas, colaboración con Guatemala, redes profesionales y oportunidades de retorno.</p></div>
+      </div>
+
+      <h3 class="m4-subheading">Programas y fuentes internacionales que vale la pena conocer</h3>
+      <div class="m4-scholar-grid">
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Japón · pregrado y posgrado</span><h3>Beca MEXT</h3><p>El Gobierno de Japón ofrece distintas categorías, incluida licenciatura. La postulación puede ser por recomendación de embajada o universidad. Hay requisitos académicos, de edad, idioma y exámenes; las convocatorias y campos disponibles dependen del país y del año. Consulta a la Embajada de Japón en Guatemala para el calendario aplicable.</p><a href="https://www.studyinjapan.go.jp/es/planning/scholarships/mext-scholarships/" target="_blank" rel="noopener">Guía oficial MEXT en español ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Europa · maestría</span><h3>Erasmus Mundus</h3><p>Son maestrías conjuntas impartidas por universidades de distintos países. Estudiantes de todo el mundo pueden postular; algunos programas ofrecen becas completas que contribuyen a matrícula, viaje, visa y manutención. Generalmente necesitas haber terminado una licenciatura: no es una beca directa para salir de diversificado.</p><a href="https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters" target="_blank" rel="noopener">Información oficial Erasmus Mundus ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Varios países · posgrado</span><h3>Guatefuturo</h3><p>Apoya estudios de posgrado en el exterior mediante un crédito-beca sujeto a requisitos y condiciones. Su programa incluye incentivos ligados al regreso y permanencia en Guatemala. Lee cuidadosamente la parte de crédito, fiadores, tasas y obligaciones antes de decidir.</p><a href="https://guatefuturo.org/" target="_blank" rel="noopener">Portal Guatefuturo ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Estados Unidos · orientación</span><h3>EducationUSA</h3><p>Es la red oficial de orientación sobre estudios superiores en Estados Unidos. Úsala para comprender universidades, admisión, ayuda financiera, pruebas y preparación. La ayuda económica para estudiantes internacionales depende de cada institución; no existe una beca universal garantizada.</p><a href="https://educationusa.state.gov/" target="_blank" rel="noopener">EducationUSA ↗</a></article>
+        <article class="m4-scholar-card"><span class="m4-scholar-label">Alemania · búsqueda de becas</span><h3>DAAD</h3><p>El Servicio Alemán de Intercambio Académico ofrece una base de datos de becas y orientación. Muchas oportunidades se concentran en maestrías, doctorados e investigación; comprueba nivel, área, idioma y elegibilidad para Guatemala.</p><a href="https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/" target="_blank" rel="noopener">Buscador oficial DAAD ↗</a></article>
+      </div>
+
+      <div class="m4-note"><strong>Para empezar desde diversificado:</strong> no todas las becas internacionales son para estudiantes que terminan el colegio. Algunas son para licenciatura, otras para intercambio, maestría o doctorado. Identifica el nivel exacto antes de invertir tiempo en una aplicación.</div>
+    </div>
+  </section>
+
+  <!-- 08: application -->
+  <section class="module-section m4-soft" id="aplicacion">
+    <div class="module-section-inner">
+      <span class="section-tag">07 · Preparar una aplicación internacional</span>
+      <h2 class="section-title">Tu historia y tu preparación cuentan</h2>
+      <div class="m4-application-grid">
+        <article><h3>Historial académico</h3><p>Cuida tus notas, pide certificados oficiales con anticipación y pregunta cómo se convierten o reconocen tus estudios en el país de destino.</p></article>
+        <article><h3>Idiomas</h3><p>Fortalece el inglés u otro idioma requerido poco a poco. Algunas universidades aceptan distintas pruebas o exenciones; revisa las reglas del programa.</p></article>
+        <article><h3>Ensayo personal</h3><p>Explica con tus propias palabras qué te interesa, qué has aprendido, qué desafíos has enfrentado y qué deseas investigar. No inventes logros ni copies ensayos ajenos.</p></article>
+        <article><h3>Recomendaciones</h3><p>Solicita cartas a docentes o mentoras que conozcan tu trabajo. Dales tiempo, información del programa y fechas claras.</p></article>
+        <article><h3>Proyectos y experiencia</h3><p>Guarda evidencia de experimentos, actividades escolares, liderazgo, voluntariado, investigaciones y proyectos comunitarios. No necesitas pagar cursos para demostrar curiosidad.</p></article>
+        <article><h3>Visa y protección</h3><p>Revisa requisitos migratorios, seguro, alojamiento y contactos oficiales. Una persona adulta de confianza debe acompañarte en decisiones y trámites mientras seas menor de edad.</p></article>
+      </div>
+      <div class="m4-warning"><strong>Privacidad:</strong> no publiques pasaporte, dirección, documentos escolares, datos bancarios ni información familiar en redes o formularios no verificados. Las solicitudes oficiales deben gestionarse con acompañamiento responsable.</div>
+    </div>
+  </section>
+
+  <!-- 09: Return and community development -->
+  <section class="module-section m4-return" id="regreso">
+    <div class="module-section-inner">
+      <span class="section-tag">08 · Conocimiento que vuelve</span>
+      <h2 class="section-title">Aprender en cualquier lugar. Transformar desde nuestras raíces.</h2>
+      <p class="m4-return-lead">Tu comunidad no es un lugar del que debas escapar para tener éxito. Es también un lugar donde hay conocimiento, talento, preguntas importantes y oportunidades para construir un futuro más justo.</p>
+      <p>Si decides estudiar en otra ciudad o en otro país, puedes mantener vínculos con Guatemala. Si decides estudiar aquí, también puedes colaborar internacionalmente. El objetivo no es imponer dónde debes vivir: es que tengas opciones reales y que el conocimiento pueda circular y beneficiar a más personas.</p>
+
+      <div class="m4-return-grid">
+        <article><span>💧</span><h3>Agua y ambiente</h3><p>Una ingeniera ambiental puede colaborar con comités de agua para medir calidad, proteger nacimientos y diseñar soluciones sostenibles junto a la comunidad.</p></article>
+        <article><span>🌽</span><h3>Agricultura y alimentación</h3><p>Una agrónoma puede trabajar con agricultoras y agricultores para probar prácticas de suelo, semillas, riego y adaptación climática, respetando el conocimiento local.</p></article>
+        <article><span>🏥</span><h3>Salud intercultural</h3><p>Una profesional de salud puede impulsar prevención, investigación y comunicación en idiomas que las familias comprendan, trabajando con personal y autoridades comunitarias.</p></article>
+        <article><span>💻</span><h3>Tecnología en idiomas mayas</h3><p>Una desarrolladora puede crear recursos digitales bilingües, herramientas educativas y sistemas que funcionen con conectividad limitada.</p></article>
+        <article><span>🔋</span><h3>Energía y oportunidades</h3><p>Una ingeniera puede colaborar en soluciones energéticas seguras y apropiadas para escuelas, centros de salud, producción y emprendimientos locales.</p></article>
+        <article><span>📚</span><h3>Enseñanza e investigación</h3><p>Una investigadora puede acompañar a estudiantes, formar equipos locales, compartir herramientas y generar conocimiento con participación comunitaria.</p></article>
+      </div>
+
+      <div class="m4-quote">
+        <p>“No se trata solamente de llegar lejos. Se trata de que lo que aprendamos abra caminos para más personas”.</p>
+        <span>Principio educativo de XtenSTEM</span>
+      </div>
+
+      <h3 class="m4-subheading">¿Cómo mantener un vínculo de colaboración si estudias fuera?</h3>
+      <ul class="m4-check-list">
+        <li>Participa en proyectos de investigación relacionados con Guatemala.</li>
+        <li>Busca prácticas, voluntariados o colaboraciones con organizaciones locales legítimas.</li>
+        <li>Comparte recursos y aprendizajes con escuelas, docentes y grupos comunitarios, respetando sus prioridades.</li>
+        <li>Construye redes con profesionales guatemaltecas dentro y fuera del país.</li>
+        <li>Investiga opciones de empleo, emprendimiento, docencia o investigación en Guatemala antes de terminar tus estudios.</li>
+        <li>Si deseas regresar, planifica también condiciones dignas de trabajo, financiamiento y oportunidades profesionales.</li>
+      </ul>
+      <div class="m4-note"><strong>El retorno no debe ser una carga individual.</strong> Para que más profesionales puedan regresar y aportar se necesitan empleos dignos, investigación financiada, instituciones fuertes, oportunidades para emprender y colaboración con las comunidades. XtenSTEM promueve esa visión colectiva.</div>
+    </div>
+  </section>
+
+  <!-- 10: Personal plan -->
+  <section class="module-section" id="mi-plan">
+    <div class="module-section-inner">
+      <span class="section-tag">09 · Mi ruta personal</span>
+      <h2 class="section-title">Construye tu plan paso a paso</h2>
+      <p class="section-sub">No tienes que resolver todo ahora. Completa lo que ya sabes y vuelve a esta guía cuando tengas nueva información.</p>
+      <div class="m4-plan">
+        <label>Mi nombre o seudónimo (opcional)<input id="planName" type="text" placeholder="Puedes dejarlo en blanco"></label>
+        <label>Área que más me interesa
+          <select id="planArea">
+            <option value="">Selecciona un área</option>
+            <option>Ambiente, agricultura y territorio</option>
+            <option>Agua e infraestructura</option>
+            <option>Salud y ciencias de la vida</option>
+            <option>Computación y tecnología</option>
+            <option>Energía y diseño</option>
+            <option>Matemática, datos e investigación</option>
+            <option>Aún estoy explorando</option>
+          </select>
+        </label>
+        <label>Una carrera que quiero investigar<input id="planCareer" type="text" placeholder="Ej. Ingeniería Ambiental"></label>
+        <label>Una universidad o programa que quiero conocer<input id="planUniversity" type="text" placeholder="Ej. USAC, UVG, una beca..."></label>
+        <label>Un problema de mi comunidad que me gustaría ayudar a resolver<textarea id="planProblem" rows="3" placeholder="Describe una necesidad que te importe"></textarea></label>
+        <label>Mi primer paso durante este mes<input id="planStep" type="text" placeholder="Ej. hablar con una docente o revisar requisitos"></label>
+        <label>Una persona adulta de confianza que puede orientarme<input id="planSupport" type="text" placeholder="Docente, familiar, orientadora..."></label>
+        <div class="m4-plan-actions"><button type="button" class="m4-btn" id="printPlan">Imprimir / guardar como PDF</button><button type="button" class="m4-btn m4-btn-light" id="clearPlan">Limpiar formulario</button></div>
+        <p class="m4-small">El plan se genera desde tu navegador. Antes de imprimirlo, revisa que no incluya información privada que no quieras compartir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="module-section m4-soft">
+    <div class="module-section-inner">
+      <span class="section-tag">Preguntas frecuentes</span>
+      <h2 class="section-title">Preguntar también es avanzar</h2>
+      <ul class="faq-list">
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Y si todavía no sé qué carrera elegir?</span><span class="icon">+</span></div><div class="faq-a">Es normal. Explora actividades, conversa con profesionales, compara planes de estudio y prueba proyectos pequeños. No necesitas decidir de inmediato. Puedes volver a realizar la actividad vocacional cuando descubras nuevos intereses.</div></li>
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Tengo que estudiar en la capital?</span><span class="icon">+</span></div><div class="faq-a">No necesariamente. La USAC y la URL, entre otras instituciones, tienen presencia en distintas regiones. Verifica qué carreras se imparten en cada sede, porque no todas están disponibles en todos los campus.</div></li>
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Puedo obtener una beca si soy de una comunidad rural indígena?</span><span class="icon">+</span></div><div class="faq-a">Puedes investigar convocatorias que consideren necesidad económica, rendimiento, territorio, pertenencia comunitaria u otros criterios. Cada programa tiene requisitos propios; no hay una beca automática por pertenecer a un grupo. Pregunta por apoyo para transporte, vivienda, alimentación y materiales, además de matrícula.</div></li>
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Necesito hablar inglés perfectamente?</span><span class="icon">+</span></div><div class="faq-a">No para comenzar a prepararte. Algunas carreras en Guatemala se estudian principalmente en español. Para ciertos programas internacionales sí se exige un nivel de idioma y una prueba. Puedes avanzar poco a poco y confirmar el requisito exacto de cada programa.</div></li>
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Estudiar en el extranjero significa que debo quedarme allá?</span><span class="icon">+</span></div><div class="faq-a">No. Las condiciones dependen del programa, la visa y el país. Puedes investigar oportunidades para regresar, trabajar en Guatemala, colaborar a distancia o participar en proyectos conjuntos. Lee las obligaciones de la beca antes de aceptarla.</div></li>
+        <li class="faq-item"><div class="faq-q" onclick="togFaq(this)"><span>¿Qué pasa si no puedo pagar una universidad privada?</span><span class="icon">+</span></div><div class="faq-a">Compara primero todas las opciones: USAC, centros regionales, becas institucionales, programas públicos y apoyos de organizaciones. Solicita costos por escrito y calcula transporte, alimentación y materiales. No te endeudes sin comprender las condiciones.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="module-section">
+    <div class="module-section-inner">
+      <div class="activity-card">
+        <h4>✏️ Actividad final: una solución que quiero construir</h4>
+        <ol>
+          <li>Identifica una necesidad que tú y otras personas de tu comunidad consideran importante.</li>
+          <li>Escribe dos carreras que podrían ayudar a comprenderla o resolverla.</li>
+          <li>Investiga una universidad guatemalteca que ofrezca una de esas carreras y una posible fuente de financiamiento.</li>
+          <li>Piensa qué conocimientos necesitarías y con quiénes de tu comunidad tendrías que colaborar.</li>
+          <li>Comparte tu plan con una docente, mentora o persona adulta de confianza. Escucha sus preguntas y mejora tu ruta.</li>
+        </ol>
+      </div>
+      <a href="modulo5.html" class="next-module">Siguiente módulo: Para padres, madres y docentes →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Xten<span>STEM</span></div>
+    <div>Módulo 04 · Mi camino para llegar ahí</div>
+    <div>Guatemala · 2026</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/modulo4.js"></script>
+</body>
+</html>
