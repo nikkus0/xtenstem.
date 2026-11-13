@@ -55,6 +55,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ── Logo de Imagen Adaptado ─────────────── */
+/* ── Logo de Imagen Adaptado (Más Grande) ─────────────── */
 .nav-logo {
   display: flex;
   align-items: center;
@@ -62,8 +63,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav-logo img {
-  height: 38px; /* Ajusta este valor si quieres que se vea un poco más grande o pequeña (ej. 35px - 45px) */
-  width: auto;  /* Mantiene las proporciones originales para que no se deforme */
+  height: 56px; /* Subido de 38px a 56px para que destaque bien */
+  width: auto;  
   object-fit: contain;
 }
 
