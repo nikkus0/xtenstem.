@@ -53,14 +53,20 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 16px rgba(10,26,15,.08);
 }
+
+/* ── Logo de Imagen Adaptado ─────────────── */
 .nav-logo {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: var(--jade);
-  letter-spacing: -.02em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo span { color: var(--maize); }
+
+.nav-logo img {
+  height: 38px; /* Ajusta este valor si quieres que se vea un poco más grande o pequeña (ej. 35px - 45px) */
+  width: auto;  /* Mantiene las proporciones originales para que no se deforme */
+  object-fit: contain;
+}
+
 .nav-links {
   display: flex; gap: 2rem; list-style: none;
   font-size: .9rem; font-weight: 500;
