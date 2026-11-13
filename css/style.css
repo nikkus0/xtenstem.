@@ -663,7 +663,7 @@ footer {
 .kaq-line {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .88rem;
+  font-size: .96rem;
   color: #8c5812; /* Deep, rich brownish-gold text for strong contrast on white */
   letter-spacing: .02em;
   margin-bottom: .4rem;
