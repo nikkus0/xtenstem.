@@ -315,8 +315,20 @@ section { padding: 80px 5%; }
 }
 .problema-card-stat {
   font-family: var(--font-display);
-  font-size: 1.8rem; font-weight: 900;
-  color: var(--jade); margin-bottom: .3rem;
+  font-size: 1.8rem; 
+  font-weight: 900;
+  color: var(--jade); 
+  margin-bottom: .3rem;
+  
+  /* Agrega esto para controlar la imagen si ocupa ese espacio */
+  display: flex;
+  align-items: center;
+}
+
+.problema-card-stat img {
+  width: 32px;  /* Ajusta el ancho según lo prefieras */
+  height: 32px; /* Ajusta el alto */
+  object-fit: contain;
 }
 .problema-card p { font-size: .9rem; color: var(--stone); line-height: 1.5; }
 .problema-quote {
