@@ -70,7 +70,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav-links {
   display: flex; gap: 2rem; list-style: none;
-  font-size: 3rem; font-weight: 500;
+  font-size: 1.3rem; font-weight: 500;
 }
 .nav-links a { color: var(--stone); transition: color .2s; }
 .nav-links a:hover { color: var(--jade); }
