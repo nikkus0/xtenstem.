@@ -181,3 +181,36 @@ window.togFaq = togFaq;
     if (sel) sel.selectedIndex = 0;
   });
 })();
+
+// ── Module 3: Accordion + Tabs ────────────────────────────
+(function () {
+  // Accordion
+  document.querySelectorAll('.m3-acc-header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      // close all
+      document.querySelectorAll('.m3-acc-header.open').forEach(b => {
+        b.classList.remove('open');
+        b.nextElementSibling.classList.remove('open');
+      });
+      if (!isOpen) {
+        btn.classList.add('open');
+        body.classList.add('open');
+      }
+    });
+  });
+
+  // Tabs inside each accordion body
+  document.querySelectorAll('.m3-acc-body').forEach(body => {
+    body.querySelectorAll('.m3-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const panel = tab.dataset.tab;
+        body.querySelectorAll('.m3-tab').forEach(t => t.classList.remove('active'));
+        body.querySelectorAll('.m3-tab-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        body.querySelector(`.m3-tab-panel[data-panel="${panel}"]`).classList.add('active');
+      });
+    });
+  });
+})();
