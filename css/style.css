@@ -53,17 +53,24 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 16px rgba(10,26,15,.08);
 }
+
+/* ── Logo de Imagen Adaptado ─────────────── */
+/* ── Logo de Imagen Adaptado (Más Grande) ─────────────── */
 .nav-logo {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: var(--jade);
-  letter-spacing: -.02em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo span { color: var(--maize); }
+
+.nav-logo img {
+  height: 160px; /* Subido de 38px a 56px para que destaque bien */
+  width: auto;  
+  object-fit: contain;
+}
+
 .nav-links {
   display: flex; gap: 2rem; list-style: none;
-  font-size: .9rem; font-weight: 500;
+  font-size: 1.0rem; font-weight: 500;
 }
 .nav-links a { color: var(--stone); transition: color .2s; }
 .nav-links a:hover { color: var(--jade); }
@@ -201,19 +208,23 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Orbit animation */
+/* ── Hero Visual & Círculo de la Chica (logo00.png) ── */
 .hero-visual {
   position: relative;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
+
 .orbit-ring {
   position: absolute;
   border-radius: 50%;
   border: 1px solid rgba(200,232,212,.15);
   animation: spin linear infinite;
 }
-.orbit-ring:nth-child(1) { width: 260px; height: 260px; animation-duration: 20s; }
-.orbit-ring:nth-child(2) { width: 360px; height: 360px; animation-duration: 30s; animation-direction: reverse; }
-.orbit-ring:nth-child(3) { width: 460px; height: 460px; animation-duration: 45s; }
+.orbit-ring:nth-child(1) { width: 320px; height: 320px; animation-duration: 20s; }
+.orbit-ring:nth-child(2) { width: 420px; height: 420px; animation-duration: 30s; animation-direction: reverse; }
+.orbit-ring:nth-child(3) { width: 520px; height: 520px; animation-duration: 45s; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .orbit-dot {
@@ -223,16 +234,29 @@ a { color: inherit; text-decoration: none; }
   border-radius: 50%;
   top: 0; left: 50%; transform: translateX(-50%);
 }
+
+/* Contenedor circular grande para logo00.png */
 .hero-globe {
-  width: 180px; height: 180px;
+  width: 340px; 
+  height: 340px;
   background: radial-gradient(circle at 35% 35%, var(--jade2), var(--jade3));
   border-radius: 50%;
-  position: relative; z-index: 1;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 4rem;
-  box-shadow: 0 0 60px rgba(46,128,85,.4);
+  position: relative; 
+  z-index: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  box-shadow: 0 0 50px rgba(46,128,85,.35);
+  overflow: hidden; 
 }
 
+/* Imagen ajustada al círculo */
+.hero-globe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 /* ── Data Strip ───────────────────────────────────────── */
 .data-strip {
   background: var(--jade);
@@ -291,8 +315,20 @@ section { padding: 80px 5%; }
 }
 .problema-card-stat {
   font-family: var(--font-display);
-  font-size: 1.8rem; font-weight: 900;
-  color: var(--jade); margin-bottom: .3rem;
+  font-size: 1.8rem; 
+  font-weight: 900;
+  color: var(--jade); 
+  margin-bottom: .3rem;
+  
+  /* Agrega esto para controlar la imagen si ocupa ese espacio */
+  display: flex;
+  align-items: center;
+}
+
+.problema-card-stat img {
+  width: 32px;  /* Ajusta el ancho según lo prefieras */
+  height: 32px; /* Ajusta el alto */
+  object-fit: contain;
 }
 .problema-card p { font-size: .9rem; color: var(--stone); line-height: 1.5; }
 .problema-quote {
@@ -342,8 +378,18 @@ section { padding: 80px 5%; }
   text-transform: uppercase; margin-bottom: .8rem;
 }
 .modulo-icon {
-  font-size: 2rem; margin-bottom: .8rem;
-  display: block;
+  width: 52px;       /* Ancho fijo para el contenedor del icono */
+  height: 52px;      /* Alto fijo */
+  margin-bottom: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modulo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Evita que la ilustración se estire o deforme */
 }
 .modulo-title {
   font-family: var(--font-display);
@@ -400,12 +446,24 @@ section { padding: 80px 5%; }
   background: var(--fog); border-radius: var(--radius);
   padding: 1.2rem;
 }
+/* ── Ajuste para iconos de ilustración personalizados ── */
 .colab-opt-icon {
-  font-size: 1.6rem; flex-shrink: 0;
-  width: 44px; height: 44px;
+  flex-shrink: 0;
+  width: 48px;  /* Ligeramente más grande si tus ilustraciones necesitan espacio */
+  height: 48px;
   background: var(--jade-bg);
   border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: 6px; /* Espacio interno para que la ilustración respire dentro del cuadro */
+}
+
+/* Control estricto de la imagen dentro del icono */
+.colab-opt-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Evita que la ilustración se deforme o estire */
 }
 .colab-opt-title { font-weight: 700; font-size: .95rem; margin-bottom: .2rem; }
 .colab-opt-desc  { font-size: .84rem; color: var(--stone); line-height: 1.5; }
@@ -613,23 +671,58 @@ footer {
   .hero             { padding: 100px 5% 60px; }
 }
 
-/* ── Kaqchikel text styling ──────────────────────────────── */
+/* ── Kaqchikel text styling (Optimized for Light Backgrounds) ── */
 .kaq-line {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .82rem;
-  color: var(--maize);
+  font-size: .96rem;
+  color: #8c5812; /* Deep, rich brownish-gold text for strong contrast on white */
   letter-spacing: .02em;
   margin-bottom: .4rem;
-  border-left: 2px solid var(--maize);
+  border-left: 3px solid #573307; /* Very deep, bold dark bronze border */
   padding-left: .6rem;
+  font-weight: 600; /* Extra weight to prevent thin italic fonts from fading */
 }
+
 .kaq-inline {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: .78em;
-  color: var(--maize);
+  font-size: .78rem;
+  color: #8c5812;
   letter-spacing: .02em;
+  font-weight: 600;
+}
+/* ── Kaqchikel text styling (Gigante, Verde Oscuro a Oro Profundo) ── */
+.kaqc-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.8rem; /* ¡Mucho más grande e imponente! */
+  letter-spacing: .03em;
+  margin-bottom: 1rem;
+  border-left: 6px solid #2b1402; /* Borde marrón ultra profundo */
+  padding-left: 1.2rem;
+  font-weight: 800; /* Más peso para que destaque con fuerza */
+  
+  /* Degradado de verde bosque oscuro a marrón dorado profundo */
+  background: linear-gradient(135deg, #1e7e48 0%, #c68a12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Sombra sutil y profunda para dar relieve */
+  filter: drop-shadow(0 0 10px rgba(198, 138, 18, 0.2));
+}
+
+.kaqc-inline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem; /* Proporcionalmente gigante para el texto en línea */
+  letter-spacing: .03em;
+  font-weight: 800;
+  
+  /* Mismo degradado para mantener consistencia */
+  background: linear-gradient(135deg, #1e7e48 0%, #c68a12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ── Module 4 styles ─────────────────────────────────────── */
@@ -872,14 +965,23 @@ footer {
 .m4-return-lead { font-size: 1rem; color: rgba(255,255,255,.8); line-height: 1.7; margin-bottom: 1.2rem; }
 .m4-return p { font-size: .9rem; color: rgba(255,255,255,.75); margin-bottom: 1.5rem; }
 .m4-return-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
-  gap: 1rem; margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */
+  gap: 2rem; /* Espacio cómodo entre las tarjetas */
 }
 .m4-return-grid article {
   background: rgba(255,255,255,.07); border-radius: var(--radius);
   padding: 1.2rem; border: 1px solid rgba(255,255,255,.12);
 }
 .m4-return-grid span { font-size: 1.5rem; display:block; margin-bottom: .5rem; }
+
+/* Agrega esto para controlar el tamaño de tus ilustraciones nuevas */
+.m4-return-grid span img {
+  width: 56px;
+  height: auto;
+  display: block;
+}
+
 .m4-return-grid h3 { font-size: .9rem; font-weight: 700; color: #fff; margin-bottom: .4rem; }
 .m4-return-grid p  { font-size: .84rem; color: rgba(255,255,255,.7); }
 .m4-return .m4-note {
@@ -913,6 +1015,7 @@ footer {
   .m4-cost-layout { grid-template-columns: 1fr; }
   .m4-toc { top: 56px; }
 }
+
 
 /* ════════════════════════════════════════════════════════
    MÓDULO 3 — Ciencia práctica
