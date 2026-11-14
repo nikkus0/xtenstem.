@@ -965,8 +965,9 @@ footer {
 .m4-return-lead { font-size: 1rem; color: rgba(255,255,255,.8); line-height: 1.7; margin-bottom: 1.2rem; }
 .m4-return p { font-size: .9rem; color: rgba(255,255,255,.75); margin-bottom: 1.5rem; }
 .m4-return-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
-  gap: 1rem; margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */
+  gap: 2rem; /* Espacio cómodo entre las tarjetas */
 }
 .m4-return-grid article {
   background: rgba(255,255,255,.07); border-radius: var(--radius);
