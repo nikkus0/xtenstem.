@@ -965,7 +965,7 @@ footer {
 .m4-return-lead { font-size: 1rem; color: rgba(255,255,255,.8); line-height: 1.7; margin-bottom: 1.2rem; }
 .m4-return p { font-size: .9rem; color: rgba(255,255,255,.75); margin-bottom: 1.5rem; }
 .m4-return-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
   gap: 1rem; margin: 1.5rem 0;
 }
 .m4-return-grid article {
