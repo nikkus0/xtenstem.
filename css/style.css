@@ -1150,3 +1150,10 @@ footer {
   .m3-tab-panel.active { grid-template-columns: 1fr; }
   .m3-toc { position: static; }
 }
+.m3-tabs .m3-tab img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+  object-fit: contain;
+}
